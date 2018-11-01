@@ -1,4 +1,4 @@
-package com.lianer.ethwallet;
+package com.lianer.ethwallet.common;
 
 import com.google.gson.Gson;
 

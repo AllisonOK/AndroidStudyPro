@@ -1,4 +1,4 @@
-package com.lianer.ethwallet;
+package com.lianer.ethwallet.common;
 
 /**
  * <pre>
@@ -8,6 +8,8 @@ package com.lianer.ethwallet;
  * </pre>
  */
 public interface Constant {
+
+    String TAG = "wallet_tag";
 
     /**
      * wallet

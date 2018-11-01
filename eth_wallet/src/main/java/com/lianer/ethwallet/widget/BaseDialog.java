@@ -15,7 +15,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
 
-import com.lianer.ethwallet.qumi.QMUIDisplayHelper;
+import com.lianer.ethwallet.common.QMUIDisplayHelper;
 
 /**
  * <pre>

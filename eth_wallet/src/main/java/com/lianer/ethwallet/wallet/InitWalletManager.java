@@ -1,9 +1,11 @@
-package com.lianer.ethwallet;
+package com.lianer.ethwallet.wallet;
 
 import android.content.Context;
 import android.util.Log;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.lianer.ethwallet.common.Constant;
+import com.lianer.ethwallet.common.Singleton;
 import com.lianer.ethwallet.stuff.HLError;
 import com.lianer.ethwallet.stuff.LWallet;
 import com.lianer.ethwallet.stuff.ReplyCode;
@@ -58,17 +60,12 @@ public class InitWalletManager {
     public Flowable<HLWallet> generateWallet(Context context,
                                              String password,
                                              String mnemonics) {
-        Flowable<String> flowable = Flowable.just(mnemonics);
-
-        return flowable
+        return Flowable.just(mnemonics)
                 .map(s -> {
                     ECKeyPair keyPair = generateKeyPair(s);
                     WalletFile walletFile = Wallet.createLight(password, keyPair);
                     HLWallet hlWallet = new HLWallet(walletFile);
                     HLWalletManager.shared().saveWallet(context, hlWallet);
-
-                    String keystore = Singleton.gson().toJson(walletFile);
-//                    Log.i("InitWalletManager","keystore:\n" + keystore);
                     return hlWallet;
                 });
     }
@@ -76,9 +73,7 @@ public class InitWalletManager {
     public Flowable<HLWallet> importMnemonic(Context context,
                                              String password,
                                              String mnemonics) {
-        Flowable<String> flowable = Flowable.just(mnemonics);
-
-        return flowable
+        return Flowable.just(mnemonics)
                 .flatMap(s -> {
                     ECKeyPair keyPair = generateKeyPair(s);
                     WalletFile walletFile = Wallet.createLight(password, keyPair);

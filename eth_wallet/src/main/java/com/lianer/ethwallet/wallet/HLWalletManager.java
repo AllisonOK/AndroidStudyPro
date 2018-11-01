@@ -1,10 +1,13 @@
-package com.lianer.ethwallet;
+package com.lianer.ethwallet.wallet;
 
 
 import android.content.Context;
 import android.support.annotation.NonNull;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.lianer.ethwallet.common.ACache;
+import com.lianer.ethwallet.common.Constant;
+import com.lianer.ethwallet.common.Singleton;
 
 import org.greenrobot.eventbus.EventBus;
 

@@ -1,4 +1,4 @@
-package com.lianer.ethwallet.qumi;
+package com.lianer.ethwallet.common;
 
 import android.app.Activity;
 import android.content.Context;

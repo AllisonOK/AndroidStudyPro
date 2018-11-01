@@ -1,6 +1,6 @@
 
 
-package com.lianer.ethwallet;
+package com.lianer.ethwallet.common;
 
 import android.content.Context;
 import android.graphics.Bitmap;

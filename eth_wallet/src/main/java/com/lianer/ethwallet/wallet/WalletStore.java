@@ -1,4 +1,6 @@
-package com.lianer.ethwallet;
+package com.lianer.ethwallet.wallet;
+
+import com.lianer.ethwallet.wallet.HLWallet;
 
 import java.util.HashMap;
 

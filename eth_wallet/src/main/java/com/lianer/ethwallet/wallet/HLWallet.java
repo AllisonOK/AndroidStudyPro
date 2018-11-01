@@ -1,6 +1,7 @@
-package com.lianer.ethwallet;
+package com.lianer.ethwallet.wallet;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.lianer.ethwallet.common.Constant;
 
 import org.web3j.crypto.WalletFile;
 
