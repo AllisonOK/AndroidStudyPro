@@ -1,0 +1,36 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="font_size_t1_style"><!-- 大标题、展示性数据、粗体-->
+        <item name="android:textSize">@dimen/font_size_t1</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="font_size_t2_style"><!-- 重要标题、金额、粗体-->
+        <item name="android:textSize">@dimen/font_size_t2</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="font_size_t3_style"><!-- 按钮文字、粗体-->
+        <item name="android:textSize">@dimen/font_size_t3</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="font_size_t4_style"><!-- 资产列表信息、粗体-->
+        <item name="android:textSize">@dimen/font_size_t4</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="font_size_t5_style"><!-- 列表选中状态信息、粗体-->
+        <item name="android:textSize">@dimen/font_size_t5</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="font_size_t6_style"><!-- 显示完整地址的文字、粗体-->
+        <item name="android:textSize">@dimen/font_size_t6</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>

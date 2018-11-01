@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="color_3c3c3c">#3C3C3C</color><!--全局背景-->
+    <color name="color_333333">#333333</color><!--底部导航、标题栏、状态栏-->
+    <color name="color_3d474c">#3D474C</color><!--卡片、筛选栏、Tab栏、可操作列表-->
+    <color name="color_00dbfd">#00DBFD</color><!--成功、金额增加、余额足够、链接-->
+    <color name="color_ff3333">#FF3333</color><!--失败、金额减少、余额不足、圆点提示-->
+    <color name="color_f5a52f">#F5A52F</color><!--激活的控件、图标-->
+    <color name="color_808080">#808080</color><!--未激活的控件、图标-->
+    <color name="color_cccccc">#CCCCCC</color><!--表单标题提示、段落、未激活文字-->
+    <color name="color_ffffff">#FFFFFF</color><!--表单输入内容后文字-->
+
+</resources>

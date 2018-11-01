@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.dd.ShadowLayout
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:sl_shadowRadius="4dp"
+        app:sl_shadowColor="#1A292C33"
+        app:sl_dx="0dp"
+        app:sl_dy="1dp"
+        app:sl_cornerRadius="7dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/colorPrimary"
+            android:layout_margin="5dp"
+            android:layout_gravity="center_horizontal">
+
+        </LinearLayout>
+
+    </com.dd.ShadowLayout>
+
+</android.support.constraint.ConstraintLayout>

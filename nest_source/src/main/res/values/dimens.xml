@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="font_size_t1">48px</dimen><!-- 大标题、展示性数据 -->
+    <dimen name="font_size_t2">36px</dimen><!-- 顶部标题 -->
+    <dimen name="font_size_t3">30px</dimen><!-- 次要标题 、表单标题、提示 -->
+    <dimen name="font_size_t4">28px</dimen><!-- 列表主要信息 -->
+    <dimen name="font_size_t5">24px</dimen><!-- 段落、提示、余额 -->
+    <dimen name="font_size_t6">22px</dimen><!-- 显示完整地址的文字 -->
+
+    <dimen name="global_margin">32px</dimen><!-- 全局页边距 -->
+    <dimen name="wallet_home_page_global_margin">45px</dimen><!-- 钱包首页 页边距 -->
+</resources>
