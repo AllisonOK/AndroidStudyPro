@@ -2,6 +2,7 @@ package com.lianer.ethwallet;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.util.Log;
 
 import com.google.gson.Gson;
@@ -12,6 +13,10 @@ import com.lianer.ethwallet.wallet.HLWallet;
 import com.lianer.ethwallet.wallet.InitWalletManager;
 
 import org.reactivestreams.Publisher;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 import io.reactivex.Flowable;
 import io.reactivex.android.schedulers.AndroidSchedulers;
@@ -36,13 +41,36 @@ public class MainActivity extends AppCompatActivity {
         //walletModel.createWallet(password);
 
         //keystore导入
-        walletModel.importWalletByKeystore(password, keystore);
+//        walletModel.importWalletByKeystore(password, keystore);
 
         //助记词导入
-        walletModel.importWalletByMnmonic(password, mnemonic);
+//        walletModel.importWalletByMnmonic(password, mnemonic);
 
         //私钥导入
-        walletModel.importWalletByPrivateKey(password, privateKey);
+//        walletModel.importWalletByPrivateKey(password, privateKey);
+
+        String value = checkMnemonics();
+        Log.i("checkMnemonics", value);
     }
 
+    /**
+     * 检查助记词是否包含相同的单词
+     */
+    private String checkMnemonics() {
+        String mnemonics = InitWalletManager.shared().generateMnemonics();
+        List<String> mnemonicData = new ArrayList<>();
+        //判断助记词是否有相同的单词
+        if (!TextUtils.isEmpty(mnemonics)) {
+            String[] mnemonicArray = mnemonics.split(" ");
+            Collections.addAll(mnemonicData, mnemonicArray);
+        }
+
+        String firstMnemonic = mnemonicData.get(0);
+        for (int i = 1; i < mnemonicData.size(); i++) {
+            if (firstMnemonic.equals(mnemonicData.get(i))) {
+                return checkMnemonics();
+            }
+        }
+        return mnemonics;
+    }
 }
