@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ndk</string>
+    <string name="ndk_use">ndk使用</string>
+</resources>

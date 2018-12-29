@@ -1,1 +1,1 @@
-include ':app', ':test', ':rxjava2', ':eth', ':network_listen', ':shadowlayout', ':eth_wallet', ':nest_source', ':load_svg_picture', ':refresh_bug', ':notification', ':vivo', ':sort'
+include ':app', ':test', ':rxjava2', ':eth', ':network_listen', ':shadowlayout', ':eth_wallet', ':nest_source', ':load_svg_picture', ':refresh_bug', ':notification', ':vivo', ':sort', ':ndk'
