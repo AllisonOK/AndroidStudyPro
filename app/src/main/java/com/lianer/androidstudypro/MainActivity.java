@@ -2,6 +2,7 @@ package com.lianer.androidstudypro;
 
 import android.content.Context;
 import android.os.Build;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
@@ -35,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         getAndroiodScreenProperty();
+
     }
 
     public void getAndroiodScreenProperty() {
